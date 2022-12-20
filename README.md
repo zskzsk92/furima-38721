@@ -34,7 +34,6 @@
 | user             | references | null: false, foreign_key: true |
 
 ### Association
-- has_many :orders
 - belongs_to :user
 - has_one :order
 
@@ -51,7 +50,7 @@
 - has_one :shipping_address
 
 
-## shipping_address テーブル
+## shipping_addresses テーブル
 
 | Column           | Type       | Options                        |
 | ---------------- | ---------- | ------------------------------ |

@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="skaReLUK0nNZBP0FKCRA" name="ER図">
-        <mxGraphModel dx="820" dy="1780" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#ffffff" math="0" shadow="0">
+        <mxGraphModel dx="1054" dy="2065" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#ffffff" math="0" shadow="0">
             <root>
                 <mxCell id="RceI16ZEk3QFUn1z2AmW-0"/>
                 <mxCell id="RceI16ZEk3QFUn1z2AmW-1" parent="RceI16ZEk3QFUn1z2AmW-0"/>
@@ -70,7 +70,7 @@
                 <mxCell id="RceI16ZEk3QFUn1z2AmW-31" value="user" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="RceI16ZEk3QFUn1z2AmW-6" vertex="1">
                     <mxGeometry y="234" width="140" height="26" as="geometry"/>
                 </mxCell>
-                <mxCell id="RceI16ZEk3QFUn1z2AmW-10" value="shipping_address" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#dae8fc;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=#6c8ebf;" parent="RceI16ZEk3QFUn1z2AmW-1" vertex="1">
+                <mxCell id="RceI16ZEk3QFUn1z2AmW-10" value="shipping_addresses" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#dae8fc;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=#6c8ebf;" parent="RceI16ZEk3QFUn1z2AmW-1" vertex="1">
                     <mxGeometry x="330" y="-471" width="140" height="208" as="geometry"/>
                 </mxCell>
                 <mxCell id="RceI16ZEk3QFUn1z2AmW-33" value="postal_code" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="RceI16ZEk3QFUn1z2AmW-10" vertex="1">
