@@ -11,9 +11,9 @@ class Item < ApplicationRecord
 
   with_options presence: true do
     validates :image
-    validates :item_name
-    validates :item_description 
-    validates :price ,numericality: { only_integer: true, greater_than_or_equal_to: 300,  less_than_or_equl_to: 9_999_999 }, format: { with: /\A[0-9]+\z/ }
+    validates :item_name, length: { maximum: 40 }
+    validates :item_description
+    validates :price ,numericality: { only_integer: true, greater_than_or_equal_to: 300, less_than_or_equal_to: 9999999 }, format: { with: /\A[0-9]+\z/ }
     validates :category_id, numericality: { other_than: 1 } 
     validates :item_status_id, numericality: { other_than: 1 } 
     validates :ship_method_id , numericality: { other_than: 1 } 
