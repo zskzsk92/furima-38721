@@ -127,11 +127,11 @@
       新規投稿商品
     </div>
     <ul class='item-lists'>
+        <% @items.each do |item| %>
           <li class='list'>
-            <% @items.each do |item| %>
-              <%= link_to "#" do %>
+            <%= link_to "#" do %>
               <div class='item-img-content'>
-                <%= image_tag item.image, class: "item-img" %>
+              <%= image_tag item.image, class: "item-img" %>
 
 
                 <%# 商品が売れていればsold outを表示しましょう %>
@@ -145,17 +145,17 @@
                 <h3 class='item-name'>
                   <%= item.item_name %>
                 </h3>
-                <div class='item-price'>
-                  <span><%= item.price %>円<br><%= item.ship_method.name %></span>
-                  <div class='star-btn'>
-                    <%= image_tag "star.png", class:"star-icon" %>
-                    <span class='star-count'>0</span>
-                  </div>
-                </div>
+              <div class='item-price'>
+                <span><%= item.price %>円<br><%= item.ship_method.name %></span>
+              <div class='star-btn'>
+                <%= image_tag "star.png", class:"star-icon" %>
+                <span class='star-count'>0</span>
               </div>
-              <% end %>
+              </div>
+              </div>
             <% end %>
           </li>
+       <% end %>
 
        <% if @items[0] == nil %>
         <li class='list'>
@@ -179,7 +179,7 @@
     </ul>
   </div>
   <%# /商品一覧 %>
-</div>
+
 <%= link_to(new_item_path, class: 'purchase-btn') do %>
   <span class='purchase-btn-text'>出品する</span>
   <%= image_tag 'icon_camera.png' , size: '185x50' ,class: "purchase-btn-icon" %>
