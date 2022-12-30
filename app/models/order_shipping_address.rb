@@ -8,7 +8,7 @@ class OrderShippingAddress
     validates :town
     validates :region_id, numericality: { other_than: 1, message: "can't be blank" }
     validates :street_address
-    validates :phone_number , format: { with: /\A[0-9]{11}\z/, message: 'is input error' }
+    validates :phone_number , format: { with: /\A[0-9]{10,11}\z/, message: 'is input error' }
 
     # orderモデルのバリデーション
     validates :user_id

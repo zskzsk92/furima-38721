@@ -32,9 +32,6 @@ private
         )
   end
 
-  def item
-    @item = Item.find(params[:item_id])
-  end
 
   def non_purchased_item
     @item = Item.find(params[:item_id])
