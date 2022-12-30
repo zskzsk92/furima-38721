@@ -3,6 +3,7 @@ class ItemsController < ApplicationController
   before_action :current_user_check, only: [:edit, :destroy, :update]
   before_action :set_item, only: [:show, :edit, :update, :destroy]
 
+
   def index
     @items = Item.order(created_at: :desc)
     
@@ -22,9 +23,11 @@ class ItemsController < ApplicationController
   end
 
   def show
+    sold_out_item
   end
 
   def edit
+    sold_out_item
   end
 
   def update
@@ -54,6 +57,13 @@ end
 
   def set_item
     @item = Item.find(params[:id])
+  end
+
+  def sold_out_item
+    if @item.order.nil?
+    else
+      redirect_to root_path 
+    end
   end
 
 end
