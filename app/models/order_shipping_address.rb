@@ -1,6 +1,6 @@
 class OrderShippingAddress
   include ActiveModel::Model
-  attr_accessor :postal_code, :town, :region_id, :street_address, :name_of_building, :phone_number , :user_id, :item_id
+  attr_accessor :postal_code, :town, :region_id, :street_address, :name_of_building, :phone_number , :user_id, :item_id, :token 
 
   with_options presence: true do
     # shipping_addressモデルのバリデーション
@@ -13,6 +13,7 @@ class OrderShippingAddress
     # orderモデルのバリデーション
     validates :user_id
     validates :item_id
+    validates :token
   end
 
   def save
